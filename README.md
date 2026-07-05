@@ -104,4 +104,67 @@ Convert raw CSV files into Parquet format using Azure Data Factory to improve st
 - Converted CSV files to Parquet
 - Stored Parquet files back into ADLS
 
+---
+
+## Step 3 – Bronze Layer Implementation (Delta Lake)
+
+### Objective
+
+Load the Parquet datasets into Azure Databricks Bronze Layer as Delta Tables while preserving raw data and implementing metadata tracking, schema evolution, and incremental loading capabilities.
+
+### Activities Performed
+
+#### Bronze Catalog & Schema
+- Created **Bronze_Catalog**
+- Created **Bronze_SCH**
+- Configured Delta Lake storage using Unity Catalog
+
+#### Bronze Tables Created
+- Bronze_Energy_Usage
+- Bronze_Weather
+- Bronze_Device_Metrics
+- Bronze_Grid_Load
+- Bronze_Tariff_Metrics
+
+#### Metadata Tables
+Created shared metadata tables:
+
+- Audit_Log
+- Watermark_Table
+
+#### Bronze Layer Features Implemented
+
+- Loaded Parquet files into Delta Tables
+- Implemented Audit Logging
+- Implemented Watermarking for Incremental Loads
+- Implemented Schema Evolution using `mergeSchema`
+- Added Error Handling
+- Added Ingestion Timestamp for datasets without source timestamps
+- Preserved raw source data in Bronze Layer
+- Verified data loading using SQL queries
+
+
+#### Bronze Layer Structure
+
+```text
+Bronze_Catalog
+│
+└── Bronze_SCH
+    │
+    ├── Audit_Log
+    ├── Watermark_Table
+    │
+    ├── Bronze_Energy_Usage
+    ├── Bronze_Weather
+    ├── Bronze_Device_Metrics
+    ├── Bronze_Grid_Load
+    └── Bronze_Tariff_Metrics
+```
+
+#### Bronze Layer Status
+
+✅ Bronze Layer Successfully Completed
+
+---
+
 Azure Data Engineer | Azure Databricks | PySpark | Delta Lake | Power BI
