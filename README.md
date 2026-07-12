@@ -165,6 +165,86 @@ Bronze_Catalog
 
 ✅ Bronze Layer Successfully Completed
 
----
+# 🥈 Silver Layer
 
-Azure Data Engineer | Azure Databricks | PySpark | Delta Lake | Power BI
+Tables
+- Silver_Energy_Usage
+- Silver_Weather
+- Silver_Device_Metrics
+- Silver_Grid_Load
+- Silver_Tariff_Metrics
+
+Features
+- Null Handling
+- Duplicate Removal
+- Type Casting
+- Data Validation
+- Surrogate Keys
+- SCD Type-2
+- OPTIMIZE
+- ZORDER
+- VACUUM
+
+# 🥇 Gold Layer
+
+Dimensions
+- dim_date
+- dim_household
+- dim_region
+- dim_device
+- dim_tariff
+
+Facts
+- fact_energy_usage
+- fact_grid_load
+
+dbt Models
+- Staging
+- Intermediate
+- Dimensions
+- Facts
+- Summaries
+- KPIs
+
+# 🔄 Pipeline Orchestration
+
+- Apache Airflow (Docker)
+- Databricks Workflows
+- Automated Scheduling
+- Task Dependencies
+- Retry Mechanism
+
+# 📢 Monitoring
+
+- Audit Log
+- Slack Notifications
+- Workflow Monitoring
+- Pipeline Status
+
+# ✅ Testing
+
+- dbt Tests
+- Pytest
+- SQL Validation
+
+# 📊 Dashboards
+
+- Executive Dashboard
+- Energy Consumption Dashboard
+- Weather Impact Dashboard
+- Billing Analytics Dashboard
+
+# 🎯 Business Outcomes
+
+- Automated ETL Pipeline
+- High Data Quality
+- Reliable Monitoring
+- Scalable Lakehouse
+- Faster Analytics
+
+# 👨‍💻 Author
+
+**Bhawna Bhoyar**
+
+Azure Data Engineer
+
