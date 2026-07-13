@@ -20,7 +20,7 @@ The pipeline uses Azure Data Lake Storage Gen2 (ADLS), Azure Data Factory, Azure
 # 🥉🥈🥇 Medallion Architecture
 
 <p align="center">
-    <img src="Architecture/Medallion_architecture.png" width="900" alt="Medallion Architecture">
+    <img src="Architecture/Medallion_architectue.png" width="900" alt="Medallion Architecture">
 </p>
 
 ---
@@ -232,7 +232,7 @@ dbt Models
 Provides an overview of key business KPIs including total households, total energy consumption, total revenue, average tariff, and peak demand.
 
 <p align="center">
-    <img src="Dashboard/images/Executive_Dashboard.png" width="900">
+  <img src="Dashboard/images/executive_dashboard.jpg" width="900">
 </p>
 
 
@@ -243,8 +243,9 @@ Provides an overview of key business KPIs including total households, total ener
 Shows the impact of weather conditions such as temperature, humidity, rainfall, and wind speed on energy consumption.
 
 <p align="center">
-    <img src="Dashboard/images/Weather_Impact_Dashboard.png" width="900">
+  <img src="Dashboard/images/weather_impact_dashboard.jpg" width="900">
 </p>
+
 
 ---
 
@@ -253,7 +254,7 @@ Shows the impact of weather conditions such as temperature, humidity, rainfall, 
 Provides insights into monthly billing, tariff plans, regional revenue, and customer billing behavior.
 
 <p align="center">
-    <img src="Dashboard/images/Billing_Analytics_Dashboard.png" width="900">
+  <img src="Dashboard/images/billing_analytics_dashboard.jpg" width="900">
 </p>
 
 ---
@@ -263,7 +264,7 @@ Provides insights into monthly billing, tariff plans, regional revenue, and cust
 Monitors device categories, maintenance status, runtime, efficiency, and regional device distribution.
 
 <p align="center">
-    <img src="Dashboard/images/Device_Monitoring_Dashboard.png" width="900">
+  <img src="Dashboard/images/device_monitoring_dashboard.jpg" width="900">
 </p>
 
 # 🎯 Business Outcomes
