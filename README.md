@@ -196,7 +196,7 @@ Dimensions
 
 Facts
 - fact_energy_usage
-- fact_grid_load
+
 
 dbt Models
 - Staging
