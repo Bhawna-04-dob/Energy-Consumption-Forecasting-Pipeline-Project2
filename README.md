@@ -12,7 +12,7 @@ The pipeline uses Azure Data Lake Storage Gen2 (ADLS), Azure Data Factory, Azure
 #  High Level Architecture
 
 <p align="center">
-    <img src="Architecture/Highlevel.png" width="900" alt="High Level Architecture">
+    <img src="Architecture/HLD.png" width="900" alt="High Level Architecture">
 </p>
 
 ---
@@ -20,7 +20,7 @@ The pipeline uses Azure Data Lake Storage Gen2 (ADLS), Azure Data Factory, Azure
 # 🥉🥈🥇 Medallion Architecture
 
 <p align="center">
-    <img src="Architecture/Workflow.png" width="900" alt="Medallion Architecture">
+    <img src="Architecture/Medallion_architecture.png" width="900" alt="Medallion Architecture">
 </p>
 
 ---
@@ -185,7 +185,7 @@ Features
 - ZORDER
 - VACUUM
 
-# 🥇 Gold Layer
+# 🥇 Gold Layer - Used DBT
 
 Dimensions
 - dim_date
@@ -227,20 +227,52 @@ dbt Models
 - Pytest
 - SQL Validation
 
-# 📊 Dashboards
+## Executive Dashboard
 
-- Executive Dashboard
-- Energy Consumption Dashboard
-- Weather Impact Dashboard
-- Billing Analytics Dashboard
+Provides an overview of key business KPIs including total households, total energy consumption, total revenue, average tariff, and peak demand.
+
+<p align="center">
+    <img src="Dashboard/images/Executive_Dashboard.png" width="900">
+</p>
+
+
+---
+
+## Weather Impact Dashboard
+
+Shows the impact of weather conditions such as temperature, humidity, rainfall, and wind speed on energy consumption.
+
+<p align="center">
+    <img src="Dashboard/images/Weather_Impact_Dashboard.png" width="900">
+</p>
+
+---
+
+## Billing Analytics Dashboard
+
+Provides insights into monthly billing, tariff plans, regional revenue, and customer billing behavior.
+
+<p align="center">
+    <img src="Dashboard/images/Billing_Analytics_Dashboard.png" width="900">
+</p>
+
+---
+
+## Device Monitoring Dashboard
+
+Monitors device categories, maintenance status, runtime, efficiency, and regional device distribution.
+
+<p align="center">
+    <img src="Dashboard/images/Device_Monitoring_Dashboard.png" width="900">
+</p>
 
 # 🎯 Business Outcomes
 
-- Automated ETL Pipeline
-- High Data Quality
-- Reliable Monitoring
-- Scalable Lakehouse
-- Faster Analytics
+- Automated and scalable data pipeline.
+- Improved data quality and governance.
+- Reliable business reporting.
+- Reduced manual effort.
+- Supports future forecasting and decision making.
 
 # 👨‍💻 Author
 
