@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: fact_energy_usage
+    columns:
+      - name: household_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_household')
+                field: household_id
+
+      - name: usage_date
+        data_tests:
+          - not_null
+
+      - name: energy_usage_kwh
+        data_tests:
+          - not_null

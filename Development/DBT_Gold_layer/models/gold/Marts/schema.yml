@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: dim_household
+    description: Household Dimension Table
+
+    columns:
+      - name: household_id
+        description: Unique Household ID
+        tests:
+          - unique
+          - not_null

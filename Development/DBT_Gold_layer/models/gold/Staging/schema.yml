@@ -1,0 +1,41 @@
+version: 2
+
+models:
+
+  - name: stg_energy_usage
+    columns:
+      - name: household_id
+        tests:
+          - not_null
+
+      - name: timestamp
+        tests:
+          - not_null
+
+  - name: stg_weather
+    columns:
+      - name: household_id
+        tests:
+          - not_null
+
+      - name: timestamp
+        tests:
+          - not_null
+
+  - name: stg_device_metrics
+    columns:
+      - name: household_id
+        tests:
+          - not_null
+
+  - name: stg_grid_load
+    columns:
+      - name: household_id
+        tests:
+          - not_null
+
+  - name: stg_tariff_metrics
+    columns:
+      - name: household_id
+        tests:
+          - not_null

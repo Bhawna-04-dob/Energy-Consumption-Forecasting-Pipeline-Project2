@@ -1,0 +1,35 @@
+version: 2
+
+models:
+
+  - name: dim_household
+    columns:
+      - name: household_id
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_region
+    columns:
+      - name: region_name
+        tests:
+          - not_null
+
+  - name: dim_device
+    columns:
+      - name: device_category
+        tests:
+          - not_null
+
+  - name: dim_tariff
+    columns:
+      - name: tariff_plan_type
+        tests:
+          - not_null
+
+  - name: dim_date
+    columns:
+      - name: date
+        tests:
+          - unique
+          - not_null

@@ -1,0 +1,13 @@
+version: 2
+
+models:
+
+  - name: energy_summary
+
+  - name: customer_kpi
+
+  - name: grid_kpi
+
+  - name: weather_kpi
+
+  - name: executive_dashboard

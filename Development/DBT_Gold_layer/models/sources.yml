@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: silver
+    database: silver_catalog
+    schema: silver_sch
+
+    tables:
+      - name: silver_energy_usage
+      - name: silver_weather
+      - name: silver_device_metrics
+      - name: silver_grid_load
+      - name: silver_tariff_metrics
